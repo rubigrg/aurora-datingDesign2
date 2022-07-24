@@ -1,0 +1,23 @@
+body {
+    font-family: 'ABeeZee';
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.logo a {
+    font-size: 30px;
+}
+
+section {
+    text-align: center;
+    border: 2px solid black;
+}
+
+h1 {
+    font-size: 25px;
+    text-decoration: underline;
+}

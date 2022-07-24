@@ -1,0 +1,450 @@
+/** Body **/
+body {
+    font-family: 'ABeeZee';
+    background-image: linear-gradient(blue 30%, purple 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1100px;
+}
+
+/** Headings and Subheadings **/
+h1{
+    text-align: center;
+    top: 0;
+}
+
+
+h3{
+    text-align: center;
+    font-size: 25px;
+}
+
+h4 {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 0;
+}
+
+h5 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 0;
+}
+
+
+/** Logo **/
+.logo {
+    padding: 45px;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+}
+
+/** Menu Bar **/
+#menubar {
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+#menubar a {
+    float: none;
+    display: inline-block;
+    text-align: center;
+    padding: 15px 62px;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    margin-right: 1%;
+}
+
+#menubar a:hover {
+    background-color: white;
+    color: blue;
+    opacity: 0.9;
+}
+
+#menubar a.active {
+    background-color: white;
+    color: blue;
+}
+
+@media screen and (max-width: 600px) {
+  #menubar {
+    text-align: left;
+    width: 40%;
+  }
+
+  #menubar a {
+    float: left;
+  
+  }
+  .content {
+    float: left;
+    width: 100%;
+  }
+}
+
+.content {
+    padding: 40px 0;
+    width: 41%;
+    margin-left: 29%;
+    margin-top: 0;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+}
+
+
+/** Home Content **/
+.content {
+    background-color: white;
+    color: black;
+    height: 780px;
+}
+
+/** Download the App **/
+.apple, .google {
+    width: 100px;
+}
+
+  .apple {
+    color: white;
+    text-decoration: none;
+    background-color: #6a1b67;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 60%;
+    background-image: linear-gradient(blue 30%, purple 100%);
+  }
+  
+  .google {
+    color: white;
+    text-decoration: none;
+    background-color: #6a1b67;
+    padding: 10px 50px;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 64%;
+    background-image: linear-gradient(blue 30%, purple 100%);
+  }
+  
+  
+  #name {
+    font-size: 16px;
+  }
+  
+  .apple a, .google a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .apple:hover, .google:hover {
+    opacity: 0.8;
+  }
+
+  /** APP table **/
+  table {
+      align-content: center;
+      text-align: center;
+      width: 85%;
+      margin-left: 7%;
+      border-bottom: 2px solid black;
+  }
+
+  td {
+      width: 50%;
+  }
+
+  .left-td {
+      border-right: 2px solid black;
+      text-align: center;
+  }
+
+  .rate-us {
+    padding: 10px 50px;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 18%;
+    background-image: linear-gradient(blue 30%, purple 100%);
+    margin-left: 28%;
+  }
+
+  .rate-us a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .rate-us:hover {
+      opacity: 0.7;
+  }
+
+  /** Gallery Content **/
+  .slideshow {
+      display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.gallery {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.number {
+  color: white;
+  background-color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color:black;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 600px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/** About Us page **/
+.aboutus, .team {
+    border-bottom: 2px solid blue;
+}
+
+.abtus, .our-st {
+    margin-left: 5%;
+    text-align: justify ;
+    font-size: 18px;
+}
+
+.column {
+    float: left;
+    width: 22.5%;
+    padding: 10px;
+    height: 150px; 
+    text-align: center;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+  /** Legal Page **/
+  .legal-info {
+      text-align: justify;
+      top: 0;
+      margin-left: 4%;
+      margin-right: 4%;
+      font-size: 18px;
+  }
+
+  .tnc, .pp, .cp, .ep, .op, .mg {
+      border: 2px solid blue;
+      border-radius: 5px;
+      width: 90%;
+      margin-left: 4%;
+      padding: 8px 0;
+  }
+
+  .legal-header {
+      float: left;
+      margin-left: 2%;
+      font-weight: bold;
+      font-size: 20px;
+  }
+
+  .column1 {
+    float: left;
+    width: 30%;
+    padding: 10px;
+    height: 50px; 
+    text-align: center;
+  }
+  
+  .row1:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .links {
+    background-image: linear-gradient(blue 30%, purple 100%);
+    color: white;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 15px;
+  }
+
+  .links:hover {
+      opacity: 0.8;
+  }
+
+  /** Contact Us Page **/
+  .contact-info {
+      text-align: center;
+      font-size: 18px;
+}
+
+/** Contact Form **/
+section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form-container {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.form {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 5px;
+  font-size: 18px;
+  border: 1px solid rgba(128, 128, 128, 0.199);
+  margin-top: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+button[type="submit"] {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 8px;
+  font-family: "Montserrat";
+  background-image: linear-gradient(blue 30%, purple 100%);
+  color: white;
+  text-decoration: none;
+  padding: 15px 40px;
+  border-radius: 15px;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s ease background-color;
+}
+button[type="submit"]:hover {
+  opacity: 0.8;
+}
+#status {
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+#status.success {
+  background-color: rgb(211, 250, 153);
+  animation: status 4s ease forwards;
+}
+#status.error {
+  background-color: rgb(250, 129, 92);
+  color: white;
+  animation: status 4s ease forwards;
+}
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
